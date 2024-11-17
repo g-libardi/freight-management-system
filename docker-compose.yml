@@ -9,8 +9,8 @@ services:
       POSTGRES_DB: db
     ports:
       - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - backend
 
   backend:
     build:
@@ -18,11 +18,27 @@ services:
       dockerfile: Dockerfile
     container_name: backend
     environment:
-      DATABASE_URL: postgres://user:password@postgres:5432/db
+      DB_DSN: postgres://user:password@postgres:5432/db
     ports:
       - "8000:8000"
     depends_on:
       - postgres
+    networks:
+      - backend
 
-volumes:
-  postgres_data:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    environment:
+      VITE_API_URL: http://localhost:8000/api
+    ports:
+      - "3000:80"
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+ 

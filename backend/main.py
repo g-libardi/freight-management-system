@@ -3,6 +3,7 @@ import data
 from contextlib import asynccontextmanager
 from modules import router
 from fastapi.middleware.cors import CORSMiddleware
+from config import FRONTEND_URL
 
 
 @asynccontextmanager
@@ -19,7 +20,7 @@ app.include_router(router, prefix='/api')
 # Allow CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=[FRONTEND_URL],
     allow_credentials=True,
     allow_methods=['*'],
     allow_headers=['*'],

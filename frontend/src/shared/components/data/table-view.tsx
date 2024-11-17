@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../ui/table";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
-import { DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator } from "../ui/dropdown-menu";
+import { DropdownMenuItem } from "../ui/dropdown-menu";
 import { EyeIcon } from "lucide-react";
 
 

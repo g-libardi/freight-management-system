@@ -1,7 +1,6 @@
 import Freight from "@/freight/entities/freight";
 import useFreightData from "@/freight/hooks/use-freight-data";
 import TableView from "@/shared/components/data/table-view";
-import { useMemo } from "react";
 
 
 const header: { key: keyof Freight; label: string }[] = [

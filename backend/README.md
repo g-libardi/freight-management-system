@@ -55,9 +55,3 @@ _For full documentation, visit the [API documentation]() !TODO_
 | **Auth Session** | | |
 | POST   | /auth/session   | Create a new session       |
 | DELETE | /auth/session   | Delete the current session |
-
-## API Authentication
-The API uses API key authentication. To authenticate, you must provide an API key in the `X-API-KEY` header. The API key is defined in the environment variable `API_KEY`.
-
-## User Authentication and Authorization
-User authentication is done through sessions. To authenticate, you must create a session by sending a POST request to `/session` with the user's username and password. The session token will be returned in the response. To authorize a request, you must provide the session token in the `Authorization` header.

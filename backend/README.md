@@ -4,7 +4,11 @@
 The backend of the Freight Management System is a RESTful API that provides endpoints for managing the system's data. The API is built using FastAPI with asyncpg for database access.
 
 ## Installation and Usage
-Firstly, you will need to build and run a PostgreSQL database, I recommend using docker for this purpose: `docker run --name my-postgres -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -e POSTGRES_DB=db -p 5432:5432 -d postgres`
+Firstly, you will need to build and run a PostgreSQL database, I recommend using docker for this purpose:
+
+`docker run --name my-postgres -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -e POSTGRES_DB=db -p 5432:5432 -d postgres`
+
+Then, you can proceed:
 
 ### With UV package manager
 1. Make sure you are in the directory of the backend project.

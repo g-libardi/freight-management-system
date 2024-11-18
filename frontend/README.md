@@ -10,7 +10,7 @@ The frontend of the Freight Management System is a React application built on to
 3. Run the Docker container with `docker run -d -p <host>:<port>:8000 freight-management-system-frontend`.
 4. The server should be running at `http://<host>:<port>`.
 
-###With NPM
+### With NPM
 1. Make sure you are in the directory of the frontend project.
 2. Install the dependencies with `npm install`.
 3. Run in development mode with `npm run dev`.

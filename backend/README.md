@@ -7,9 +7,9 @@ The backend of the Freight Management System is a RESTful API that provides endp
 ### With UV package manager
 1. Make sure you are in the directory of the backend project.
 2. Install the dependencies with `uv sync`.
-3. Run the server with `uv run fastapi run <host>:<port>`.
-4. The server should be running at `http://<host>:<port>`.
-5. You can access the API documentation at `http://<host>:<port>/docs`.
+3. Run the server with `uv run fastapi run`.
+4. The server should be running at `http://localhost:8000`.
+5. You can access the API documentation at `http://localhost:8000/docs`.
 
 ### With PIP
 1. Make sure you are in the directory of the backend project.
